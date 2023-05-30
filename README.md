@@ -19,6 +19,9 @@ Here is NodeJs example:
 
         // show it can be access by any domain.
         res.set('Access-Control-Allow-Origin', '*');
+
+        // restrict to specific domain
+        // res.set('Access-Control-Allow-Origin', 'sample.com');
         
         res.send('This has CORS enabled 🎈')
     })
