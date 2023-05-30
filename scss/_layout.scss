@@ -1,0 +1,7 @@
+$font-sizes: (30px, 28px, 26px, 16px);
+
+@for $i from 1 through 4 {
+    h#{$i} {
+        font-size: nth($font-sizes, $i);
+    }
+}
